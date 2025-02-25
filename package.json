@@ -1,0 +1,7 @@
+{
+    "name:":"hello-gin",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "go run main.go"
+    }
+}
