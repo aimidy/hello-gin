@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"hello-gin/m/v2/model"
 	"hello-gin/m/v2/router"
 	"os"
 
@@ -23,6 +24,9 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
+
+	// Initialize MySQL connection
+	model.InitDB()
 
 	router.RegisterRoutes(r)
 	r.Run(":" + port)
