@@ -20,6 +20,7 @@ func main() {
 	appName := os.Getenv("APP_NAME")
 	fmt.Println("Starting " + appName + " ...")
 
+	// port 預設為 8080，若有設定環境變數 PORT 則使用環境變數的值
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
